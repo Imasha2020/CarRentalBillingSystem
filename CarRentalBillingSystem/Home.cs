@@ -16,5 +16,17 @@ namespace CarRentalBillingSystem
         {
             InitializeComponent();
         }
+
+        private void btnAddRental_Click(object sender, EventArgs e)
+        {
+            AddRental addForm = new AddRental();
+            addForm.Show();
+        }
+
+        private void btnViewRentals_Click(object sender, EventArgs e)
+        {
+            ViewRental viewForm = new ViewRental();
+            viewForm.Show();
+        }
     }
 }
