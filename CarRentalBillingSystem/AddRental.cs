@@ -50,10 +50,10 @@ namespace CarRentalBillingSystem
             else if (radioButton3.Checked)
                 vehicleType = "Luxury";
 
-            DateTime startDate = StartDate.Value;
-            DateTime endDate = EndDate.Value;
+            DateTime start = StartDate.Value;
+            DateTime end = EndDate.Value;
 
-            int rentalDays = (endDate - startDate).Days + 1;
+            int rentalDays = (end - start).Days + 1;
 
             // 2. Base rental
             Rental rental = new BaseRental(vehicleType, rentalDays);
@@ -78,7 +78,22 @@ namespace CarRentalBillingSystem
             // 4. Apply VAT (only on base charge)
             rental = new VATDecorator(rental , baseCharge);
 
+            // 5. Calculate final bill
+            double finalBill = rental.GetCost();
 
+            // 6. Save customer
+            Customer customer = new Customer
+            {
+                Name = name,
+                VehicleType = vehicleType,
+                startDate = start,
+                endDate = end,
+                FinalBill = finalBill
+            };
+
+            CustomerList.Customers.Add(customer);
+
+            MessageBox.Show("Rental Added Successfully!");
 
         }
     }
