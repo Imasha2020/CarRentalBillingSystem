@@ -46,23 +46,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdditionalDriverDecorator.cs" />
     <Compile Include="AddRental.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AddRental.Designer.cs">
       <DependentUpon>AddRental.cs</DependentUpon>
     </Compile>
+    <Compile Include="BabySeatDecorator.cs" />
+    <Compile Include="BaseRental.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="CustomerList.cs" />
+    <Compile Include="FuelDecorator.cs" />
+    <Compile Include="GPSDecorator.cs" />
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="InsuranceDecorator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rental.cs" />
+    <Compile Include="RentalDecorator.cs" />
+    <Compile Include="VATDecorator.cs" />
     <Compile Include="ViewRental.cs">
       <SubType>Form</SubType>
     </Compile>
