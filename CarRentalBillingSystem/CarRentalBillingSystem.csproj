@@ -66,6 +66,9 @@
     <Compile Include="ViewRental.Designer.cs">
       <DependentUpon>ViewRental.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddRental.resx">
+      <DependentUpon>AddRental.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -79,6 +82,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ViewRental.resx">
+      <DependentUpon>ViewRental.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
