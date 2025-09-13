@@ -157,6 +157,7 @@
             this.BackToHomeBtn.TabIndex = 21;
             this.BackToHomeBtn.Text = "BACK TO HOME";
             this.BackToHomeBtn.UseVisualStyleBackColor = true;
+            this.BackToHomeBtn.Click += new System.EventHandler(this.BackToHomeBtn_Click);
             // 
             // checkBox1
             // 

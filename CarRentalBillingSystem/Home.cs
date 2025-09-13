@@ -21,6 +21,7 @@ namespace CarRentalBillingSystem
         {
             AddRental addForm = new AddRental();
             addForm.Show();
+            this.Hide();
         }
 
         private void btnViewRentals_Click(object sender, EventArgs e)
@@ -28,5 +29,8 @@ namespace CarRentalBillingSystem
             ViewRental viewForm = new ViewRental();
             viewForm.Show();
         }
+
+       
+
     }
 }

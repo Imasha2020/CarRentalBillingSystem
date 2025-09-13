@@ -35,6 +35,7 @@
             this.EndDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RentalDays = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FinalBill = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,11 +98,22 @@
             this.FinalBill.Name = "FinalBill";
             this.FinalBill.Width = 125;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(558, 475);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(182, 34);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "BACK TO HOME";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // ViewRental
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(966, 450);
+            this.ClientSize = new System.Drawing.Size(966, 538);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "ViewRental";
             this.Text = "ViewRental";
@@ -119,5 +131,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn EndDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn RentalDays;
         private System.Windows.Forms.DataGridViewTextBoxColumn FinalBill;
+        private System.Windows.Forms.Button button1;
     }
 }

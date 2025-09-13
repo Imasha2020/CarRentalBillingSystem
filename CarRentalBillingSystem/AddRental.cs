@@ -15,6 +15,7 @@ namespace CarRentalBillingSystem
         public AddRental()
         {
             InitializeComponent();
+            //Home = home;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -95,6 +96,12 @@ namespace CarRentalBillingSystem
 
             MessageBox.Show("Rental Added Successfully!");
 
+        }
+
+        private void BackToHomeBtn_Click(object sender, EventArgs e)
+        {
+            Home home = new Home();
+            home.Show();
         }
     }
 }
