@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CarRentalBillingSystem
 {
-    public abstract class BaseRental : Rental
+    public  class BaseRental : Rental
     {
         private double baseRate;
         private int rentalDays;

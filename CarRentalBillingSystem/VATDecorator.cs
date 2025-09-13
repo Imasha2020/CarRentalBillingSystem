@@ -8,11 +8,14 @@ namespace CarRentalBillingSystem
 {
     public class VATDecorator : RentalDecorator
     {
-        public VATDecorator(Rental rental) : base(rental) { }
+        private double _baseCost;
+        public VATDecorator(Rental rental , double baseCost) : base(rental) {
+            _baseCost = baseCost;
+        }
 
         public override double GetCost()
         {
-            return base.GetCost() * 1.12;
+            return base.GetCost() + (_baseCost * 0.12);
         }
     }
 }

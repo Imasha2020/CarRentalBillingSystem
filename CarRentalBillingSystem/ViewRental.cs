@@ -16,5 +16,21 @@ namespace CarRentalBillingSystem
         {
             InitializeComponent();
         }
+
+        private void ViewRentals_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("Customer count: " + CustomerList.Customers.Count); // 🧪 Debug
+
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = CustomerList.Customers;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Home home = new Home();
+            home.Show();
+            
+        }
     }
 }

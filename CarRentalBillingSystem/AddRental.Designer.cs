@@ -38,18 +38,13 @@
             this.StartDate = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.EndDate = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.GPS = new System.Windows.Forms.TextBox();
-            this.BabySeat = new System.Windows.Forms.TextBox();
-            this.Fuel = new System.Windows.Forms.TextBox();
-            this.AdditionalDriver = new System.Windows.Forms.TextBox();
-            this.Insurance = new System.Windows.Forms.TextBox();
             this.AddRentalbtn = new System.Windows.Forms.Button();
             this.BackToHomeBtn = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -144,87 +139,6 @@
             this.EndDate.Size = new System.Drawing.Size(200, 22);
             this.EndDate.TabIndex = 9;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(55, 267);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(103, 16);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "GPS Navigation";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(55, 314);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 16);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Baby Seat";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(55, 396);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(106, 16);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Additional Driver";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(55, 356);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(89, 16);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "Fuel Payment";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(55, 435);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(65, 16);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "Insurance";
-            // 
-            // GPS
-            // 
-            this.GPS.Location = new System.Drawing.Point(239, 267);
-            this.GPS.Name = "GPS";
-            this.GPS.Size = new System.Drawing.Size(356, 22);
-            this.GPS.TabIndex = 15;
-            this.GPS.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // BabySeat
-            // 
-            this.BabySeat.Location = new System.Drawing.Point(239, 311);
-            this.BabySeat.Name = "BabySeat";
-            this.BabySeat.Size = new System.Drawing.Size(356, 22);
-            this.BabySeat.TabIndex = 16;
-            // 
-            // Fuel
-            // 
-            this.Fuel.Location = new System.Drawing.Point(239, 350);
-            this.Fuel.Name = "Fuel";
-            this.Fuel.Size = new System.Drawing.Size(356, 22);
-            this.Fuel.TabIndex = 17;
-            // 
-            // AdditionalDriver
-            // 
-            this.AdditionalDriver.Location = new System.Drawing.Point(239, 393);
-            this.AdditionalDriver.Name = "AdditionalDriver";
-            this.AdditionalDriver.Size = new System.Drawing.Size(356, 22);
-            this.AdditionalDriver.TabIndex = 18;
-            // 
-            // Insurance
-            // 
-            this.Insurance.Location = new System.Drawing.Point(239, 432);
-            this.Insurance.Name = "Insurance";
-            this.Insurance.Size = new System.Drawing.Size(356, 22);
-            this.Insurance.TabIndex = 19;
-            // 
             // AddRentalbtn
             // 
             this.AddRentalbtn.Location = new System.Drawing.Point(127, 489);
@@ -233,6 +147,7 @@
             this.AddRentalbtn.TabIndex = 20;
             this.AddRentalbtn.Text = "ADD RENTAL";
             this.AddRentalbtn.UseVisualStyleBackColor = true;
+            this.AddRentalbtn.Click += new System.EventHandler(this.AddRentalbtn_Click);
             // 
             // BackToHomeBtn
             // 
@@ -242,24 +157,70 @@
             this.BackToHomeBtn.TabIndex = 21;
             this.BackToHomeBtn.Text = "BACK TO HOME";
             this.BackToHomeBtn.UseVisualStyleBackColor = true;
+            this.BackToHomeBtn.Click += new System.EventHandler(this.BackToHomeBtn_Click);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(250, 282);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(125, 20);
+            this.checkBox1.TabIndex = 22;
+            this.checkBox1.Text = "GPS Navigation";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(250, 328);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(92, 20);
+            this.checkBox2.TabIndex = 23;
+            this.checkBox2.Text = "Baby Seat";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(250, 372);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(111, 20);
+            this.checkBox3.TabIndex = 24;
+            this.checkBox3.Text = "Fuel Payment";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(405, 282);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(128, 20);
+            this.checkBox4.TabIndex = 25;
+            this.checkBox4.Text = "Additional Driver";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(405, 328);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(87, 20);
+            this.checkBox5.TabIndex = 26;
+            this.checkBox5.Text = "Insurance";
+            this.checkBox5.UseVisualStyleBackColor = true;
             // 
             // AddRental
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 545);
+            this.Controls.Add(this.checkBox5);
+            this.Controls.Add(this.checkBox4);
+            this.Controls.Add(this.checkBox3);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.BackToHomeBtn);
             this.Controls.Add(this.AddRentalbtn);
-            this.Controls.Add(this.Insurance);
-            this.Controls.Add(this.AdditionalDriver);
-            this.Controls.Add(this.Fuel);
-            this.Controls.Add(this.BabySeat);
-            this.Controls.Add(this.GPS);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.EndDate);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.StartDate);
@@ -288,17 +249,12 @@
         private System.Windows.Forms.DateTimePicker StartDate;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker EndDate;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox GPS;
-        private System.Windows.Forms.TextBox BabySeat;
-        private System.Windows.Forms.TextBox Fuel;
-        private System.Windows.Forms.TextBox AdditionalDriver;
-        private System.Windows.Forms.TextBox Insurance;
         private System.Windows.Forms.Button AddRentalbtn;
         private System.Windows.Forms.Button BackToHomeBtn;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBox5;
     }
 }
